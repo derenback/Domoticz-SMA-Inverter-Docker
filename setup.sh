@@ -27,9 +27,8 @@ sudo docker compose up -d
 sudo docker compose down
 
 # create the plugin folder
-sudo mkdir -p "$install_path/config/plugins/SMA"
-cd "$install_path/config/plugins/SMA"
-git clone https://github.com/derenback/Domoticz-SMA-Inverter.git
+cd "$install_path"/config/plugins
+sudo git clone https://github.com/derenback/Domoticz-SMA-Inverter.git
 cd "$install_path"
 
 # Start the container

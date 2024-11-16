@@ -64,19 +64,16 @@ Follow these instructions to set up and run Domoticz with the SMA inverter plugi
     sudo docker compose down
     ```
 
-8. Create the plugin folder:
+8. Clone the SMA plugin repository into the plugin folder:
     ```sh
-    sudo mkdir -p /opt/domoticz/config/plugins/SMA
+    cd config/plugins
+    sudo git clone https://github.com/derenback/Domoticz-SMA-Inverter.git
+    cd ../../
     ```
 
-9. Clone the SMA plugin repository into the plugin folder:
-    ```sh
-    git clone https://github.com/derenback/Domoticz-SMA-Inverter.git /opt/domoticz/config/plugins/SMA
-    ```
-
-10. Start the Domoticz container:
+9. Start the Domoticz container:
     ```sh
     sudo docker compose up -d
     ```
 
-11. Access Domoticz at [http://localhost:8080](http://localhost:8080).
+10. Access Domoticz at [http://localhost:8080](http://localhost:8080).
