@@ -1,0 +1,1 @@
+# Domoticz-SMA-Inverter-Docker
