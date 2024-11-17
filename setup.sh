@@ -9,6 +9,23 @@ then
     exit
 fi
 
+# Check if Docker is installed
+if ! command -v git &> /dev/null
+then
+    echo "Git is not installed. Do you want to install Git? (y/N)"
+    read -n 1 install_git
+    if [ "$install_git" == "y" ]
+    then
+        echo "Installing Git..."
+        sudo apt update
+        sudo apt install git
+        git --version
+    else
+        echo "Git is required to install the SMA plugin. Please install Git before running this script."
+        exit
+    fi
+fi
+
 # Store current directory
 current_dir=$(pwd)
 

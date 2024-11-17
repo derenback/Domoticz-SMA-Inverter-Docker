@@ -5,10 +5,18 @@ This repository contains example Docker files to run Domoticz with the SMA inver
 ## Getting Started
 
 Follow these instructions to set up and run Domoticz with the SMA inverter plugin in a Docker container.
+For more information on what you can do with Domoticz, checkout the Domticz [wiki](https://wiki.domoticz.com/Getting_started)
 
 ### Prerequisites
 
-- Docker installed on your system. If Docker is not installed, please follow the instructions [here](https://docs.docker.com/get-docker/).
+Docker and Git installed on your system. 
+- If Docker is not installed, please follow the instructions [here](https://docs.docker.com/get-docker/).
+- If Git is not installd:
+    ```sh
+    sudo apt update
+    sudo apt install git
+    git --version
+    ```
 
 ### Installation (Automatic)
 
