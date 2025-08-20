@@ -2,6 +2,9 @@
 
 This repository contains example Docker files to run Domoticz with the SMA inverter plugin. The plugin can be found at [derenback/Domoticz-SMA-Inverter](https://github.com/derenback/Domoticz-SMA-Inverter).
 
+## Change log
+- **2025-08-19**: Look version of `pymodbus==3.0.2` to resolve compatibility issues with the later versions.
+
 ## Getting Started
 
 Follow these instructions to set up and run Domoticz with the SMA inverter plugin in a Docker container.
