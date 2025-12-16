@@ -6,23 +6,24 @@
 if ! command -v docker &> /dev/null
 then
     echo "Docker is not installed. Please install Docker before running this script."
-    exit
+    exit 1
 fi
 
-# Check if Docker is installed
+# Check if Git is installed
 if ! command -v git &> /dev/null
 then
     echo "Git is not installed. Do you want to install Git? (y/N)"
     read -n 1 install_git
+    echo
     if [ "$install_git" == "y" ]
     then
         echo "Installing Git..."
         sudo apt update
-        sudo apt install git
+        sudo apt install -y git
         git --version
     else
         echo "Git is required to install the SMA plugin. Please install Git before running this script."
-        exit
+        exit 1
     fi
 fi
 

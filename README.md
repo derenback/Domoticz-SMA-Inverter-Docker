@@ -3,18 +3,18 @@
 This repository contains example Docker files to run Domoticz with the SMA inverter plugin. The plugin can be found at [derenback/Domoticz-SMA-Inverter](https://github.com/derenback/Domoticz-SMA-Inverter).
 
 ## Change log
-- **2025-12-16**: Updated Dockerfile to install `pyModbusTCP` instead of `pymodbus` due to compatibility issues. Make sure to also use the latest version of the Domiticz SMA-Inverter plugin which supports this.
+- **2025-12-16**: Updated Dockerfile to install `pyModbusTCP` instead of `pymodbus` due to compatibility issues. Make sure to also use the latest version of the Domoticz SMA-Inverter plugin which supports this.
 
 ## Getting Started
 
 Follow these instructions to set up and run Domoticz with the SMA inverter plugin in a Docker container.
-For more information on what you can do with Domoticz, checkout the Domticz [wiki](https://wiki.domoticz.com/Getting_started)
+For more information on what you can do with Domoticz, checkout the Domoticz [wiki](https://wiki.domoticz.com/Getting_started)
 
 ### Prerequisites
 
 Docker and Git installed on your system. 
 - If Docker is not installed, please follow the instructions [here](https://docs.docker.com/get-docker/).
-- If Git is not installd:
+- If Git is not installed:
     ```sh
     sudo apt update
     sudo apt install git
@@ -25,7 +25,7 @@ Docker and Git installed on your system.
 
 1. Clone this repository:
     ```sh
-    git clone https://github.com/yourusername/Domoticz-SMA-Inverter-Docker.git
+    git clone https://github.com/derenback/Domoticz-SMA-Inverter-Docker.git
     cd Domoticz-SMA-Inverter-Docker
     ```
 
@@ -40,7 +40,7 @@ Docker and Git installed on your system.
 
 1. Clone this repository:
     ```sh
-    git clone https://github.com/yourusername/Domoticz-SMA-Inverter-Docker.git
+    git clone https://github.com/derenback/Domoticz-SMA-Inverter-Docker.git
     cd Domoticz-SMA-Inverter-Docker
     ```
 
